@@ -21,7 +21,7 @@
     />
     <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
 	--> 
-    <link rel="shortcut icon" href="/maskface.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/maskface.icoico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -106,7 +106,7 @@
             <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
 
             <div class="pt-3 image-title-wrap">
-                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                <button type="button p-2" class="try-again-btn" onclick="gaReload();" data-toggle="modal" data-target="#adModal">
                     <span class="try-again-text">다른 사진으로 재시도</span>
                 </button>
             </div>
@@ -166,7 +166,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                   <!--  <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5> -->
+
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -177,22 +177,22 @@
  data-ad-width   = "300" 
  data-ad-height  = "250"></ins>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
+<!--                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
                         <span class="try-again-text">다른 사진으로 재시도</span>
                     </button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <script>
-        function gaReload1() {
-            gtag('event', '다른 사진으로 재시도 1차', {
-                'event_category': '다른 사진으로 재시도'
-            });
-        }
-        function gaReload2() {
-            gtag('event', '다른 사진으로 재시도 2차', {
+        //function gaReload() {
+        //    gtag('event', '다른 사진으로 재시도 1차', {
+        //        'event_category': '다른 사진으로 재시도'
+        //    });
+        //}
+        function gaReload() {
+            gtag('event', '다른 사진으로 재시도', {
                 'event_category': '다른 사진으로 재시도'
             });
             window.location.reload();
